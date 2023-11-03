@@ -1,0 +1,22 @@
+<table border=1>
+
+<tr>
+<th>Nama</th>
+<th>No Telepon</th>
+<th>Alamat</th>
+<th>Aksi</th>
+</tr>
+#{list items:daftar, as:'x'} 
+<!--as:'x' => mempersingkat penulisan pemanggilan-->
+<tr>
+<td>${x.nama}</td>
+<td> ${x.notelp} </td>
+<td>${x.alamat}</td> <br/>	<!--berulang sesuai list yg ada-->
+
+    <td><a href="@{Application.edit(x.id)}">Edit</a></td>
+</tr>
+#{/list}
+</table>
+<form action="@{Application.insert()}">
+<input type="submit" value="Tambah Data"/>	
+</form>

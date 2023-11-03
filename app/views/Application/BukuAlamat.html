@@ -1,0 +1,24 @@
+
+    <h1>Buku Alamat</h1>	<!--halaman BukuAlamat akan mengirim ke aplication.BuatBaru--> 
+    <form name="objbk" action="@{Application.buatBaru()}" >
+    	<table>
+    		<tr>
+    			<td>Nama: </td>
+    			<td><input type="text" name="objbk.nama" required></td>
+    		</tr>
+    		<tr>
+    			<td>No Telepon: </td>
+    			<td><input type="number" name="objbk.notelp" required></td>
+    		</tr>
+    		<tr>
+    			<td>Alamat: </td>
+    			<td><textarea name="objbk.alamat" rows="5" required></textarea></td>
+    		</tr>
+    		<tr>
+    			<td></td>
+    			<td><input type="submit" value="Tambah"></td>
+    		</tr>
+    	</table>
+    </form>
+</body>
+
