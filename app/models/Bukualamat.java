@@ -2,20 +2,26 @@ package models;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import models.Golongandarah;
+
+import play.db.jpa.Model;
+
+import models.GolonganDarah;
+import models.Kabupaten;
 
 @Entity
-
-//class Bukualamat akan terkoneksi dg tabel di db dan akanemmbuat 1 tabel dg nama BukuAlamat dg kolom yg sudah dibuat di sini
-public class Bukualamat extends play.db.jpa.Model{
+//class BukuAlamat akan terkoneksi dg tabel di db dan akanemmbuat 1 tabel dg nama BukuAlamat dg kolom yg sudah dibuat di sini
+public class BukuAlamat extends Model{
 	public String nama;
 	public String notelp;
 	public String alamat;
+
 	@ManyToOne
-	public Golongandarah namagoldar;
+	public GolonganDarah namagoldar;
 	
+	@ManyToOne
+	public Kabupaten namakabupaten;
+
 	public String ToString() {
 		return nama;
-		
 	}
 }

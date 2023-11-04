@@ -1,9 +1,23 @@
 package models;
 
 import javax.persistence.Entity;
+
+import play.db.jpa.Model;
+
 @Entity
-public class User extends play.db.jpa.Model {
+public class User extends Model {
     public String username;
     public String password;
-    
+    public String fullname;
+    public boolean isAdmin;
+
+    public User(String username, String password, String fullname){
+        this.username = username;
+        this.password = password;
+        this.fullname = fullname;
+    }
+
+    public String ToString(){
+        return this.username;
+    }
 }

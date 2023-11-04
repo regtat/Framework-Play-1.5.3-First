@@ -1,0 +1,28 @@
+#{extends 'layout.html' /} #{set title:'Tambah Alamat' /}
+
+<h1>Tambah Buku Alamat</h1>
+<a href="@{buku_alamat.index()}">Kembali ke view</a>
+<form action="@{buku_alamat.save()}" name="bukuAlamat">
+    <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" name="bukuAlamat.nama" placeholder="Masukkan nama Anda!">
+      </div>
+      <div class="mb-3">
+        <label for="notelp" class="form-label">No telepon</label>
+        <input type="text" class="form-control" id="notelp" name="bukuAlamat.notelp" placeholder="+628xxxxxxxxxx">
+      </div>
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat</label>
+        <textarea class="form-control" id="alamat" name="bukuAlamat.alamat" rows="3"></textarea>
+      </div class="mb-3">
+      <label for="goldar" class="form-label">
+      <select class="form-select" aria-label="Default select example"
+      name="bukuAlamat.namagoldar.id"
+      id="goldar">
+      #{list items:goldars, as:'x'}
+      <option value="${x.id}">${x.namagoldar}</option>
+      #{/list}
+      </select>
+      </label>
+      <button type="submit" class="btn btn-outline-primary">Tambah</button>
+</form>

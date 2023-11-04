@@ -2,9 +2,11 @@ package models;
 
 import javax.persistence.Entity;
 
+import play.db.jpa.Model;
+
 @Entity
 
-public class Golongandarah extends play.db.jpa.Model {
+public class GolonganDarah extends Model {
 	public String namagoldar;
 	
 	public String toString() {

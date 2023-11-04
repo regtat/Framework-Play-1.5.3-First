@@ -1,0 +1,32 @@
+#{extends 'layout.html' /} #{set title:'Home' /}
+
+<h1>Buku Alamat</h1>
+<a href="/buku_alamat/insert">
+    <button type="button" class="btn btn-outline-light">Tambah Data</button>
+</a>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nama</th>
+                <th scope="col">No Telepon</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            #{list items:daftar, as:'x'}
+            <tr>
+                <td>${x.nama}</td>
+                <td>${x.notelp}</td>
+                <td>${x.alamat}</td>
+                <td>
+                    <a href="@{buku_alamat.edit(x.id)}"
+                    onclick="return confirm('Apakah Anda yakin?')">
+                    Delete
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
