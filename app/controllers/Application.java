@@ -30,7 +30,7 @@ public class Application extends Controller{
     	render(); //merender ke suatu halaman BukuAlamat
     	//render= mengirim objek/parameter/variabel ke halaman BukuAlamat
     }
-
+*/
     public static void buatBaru(BukuAlamat objbk) {
     	objbk.nama=objbk.nama;
     	objbk.notelp=objbk.notelp;

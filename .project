@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>%PROJECT_NAME%</name>
+	<name>BukuAlamat</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -15,9 +15,51 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.playframework.playclipse.playNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>crud</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/crud/app</location>
+		</link>
+		<link>
+			<name>docviewer</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/docviewer/app</location>
+		</link>
+		<link>
+			<name>secure</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/secure/app</location>
+		</link>
+		<link>
+			<name>conf/crud</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/crud/conf</location>
+		</link>
+		<link>
+			<name>conf/secure</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/secure/conf</location>
+		</link>
+		<link>
+			<name>public/crud</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/crud/public</location>
+		</link>
+		<link>
+			<name>public/docviewer</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/docviewer/public</location>
+		</link>
+		<link>
+			<name>public/secure</name>
+			<type>2</type>
+			<location>C:/play-1.5.3/modules/secure/public</location>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
-			<id>1699119510728</id>
+			<id>1699180892470</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

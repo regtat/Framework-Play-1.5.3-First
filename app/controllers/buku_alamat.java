@@ -8,7 +8,7 @@ import java.util.*;
 import models.*;
 
 @With(Secure.class)
-public class buku_alamat extends Controller {
+public class buku_alamat extends Controller{
 
     public static void index() {
         List daftar = BukuAlamat.findAll();
@@ -36,6 +36,5 @@ public class buku_alamat extends Controller {
         BukuAlamat bukuAlamat = BukuAlamat.find("id=?1", id).first();
         List goldars = GolonganDarah.findAll();
         List kabupatens = Kabupaten.findAll();
-        render(bukuAlamat, goldars, kabupatens);
     }
 }
